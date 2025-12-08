@@ -14,5 +14,5 @@ class Phonebook
     public:
         int   add();
         int    search(); 
-        void setint(int cnt, int idx);    
+        void setint(int cnt, int idx);
 };
