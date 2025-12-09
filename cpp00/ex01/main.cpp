@@ -5,7 +5,7 @@ int main()
 {
     Phonebook  phonebook;
     std::string buffer;
-    phonebook.setint(0,0);
+    phonebook.setint();
     std::cout <<
     "======================================================================================\n"
     "OOOOOO   OO    OO  OOOOOOO   OO      OO OOOOO OOOOOO    OOOOOOO    OOOOOOO   OO    OO\n"

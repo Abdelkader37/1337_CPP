@@ -1,11 +1,10 @@
 #include "header.hpp"
 
-
-void Phonebook::setint(int cnt, int idx)
+void Phonebook::setint()
 {
-    this->cnt = 0;
-    this->idx = 0;
-}  
+    cnt = 0;
+    idx = 0;
+}
 
 int Phonebook::add()
 {
@@ -104,7 +103,10 @@ int Phonebook::search()
             continue;
         if(buffer.size() == 1)
         {
-            int idx = std::stoi(buffer);
+            std::stringstream ss(buffer);
+            
+            int idx = 0;
+            ss >> idx;
             if((idx >= 1 && idx < 9))
             {    
                 if(idx > this->cnt && idx > this->idx)

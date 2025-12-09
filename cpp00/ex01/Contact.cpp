@@ -20,7 +20,7 @@ void	Contact::set_darkestsecret(std::string s)
 }
 bool	Contact::set_phone_number(std::string s)
 {
-	for(int i = 0; i < s.size(); i++)
+	for(long unsigned i = 0; i < s.size(); i++)
 	{
 		if(!isdigit(s[i]))
 			return(0);
