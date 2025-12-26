@@ -1,9 +1,9 @@
-SRC = newZombie.cpp randomChump.cpp Zombie.cpp main.cpp
+SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
-NAME = zombie
+NAME = refrence
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-HDR = Zombie.hpp
+HDR = 
 
 all: $(NAME)
 

@@ -1,18 +1,13 @@
 #include "Zombie.hpp"
 
+Zombie::Zombie(std::string s): name(s){}
 
-void    Zombie::announce(void)
-{
-    if(name == "Foo")
-        std::cout  << name << ": BraiiiiiiinnnzzzZ...\n";
-    else
-        std::cout << "<" << name << ">: BraiiiiiiinnnzzzZ...\n";
-}
-
-Zombie::Zombie(std::string str):name(str)
-{} ;
-
-Zombie::~Zombie(void)
+Zombie::~Zombie()
 {
     std::cout << name << " is destroyed\n";
+}
+
+void Zombie::announce(void)
+{
+    std::cout << Zombie::name << " : BraiiiiiiinnnzzzZ...\n";
 }

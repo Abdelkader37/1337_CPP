@@ -1,9 +1,9 @@
-SRC = newZombie.cpp randomChump.cpp Zombie.cpp main.cpp
+SRC = main.cpp HumanB.cpp HumanA.cpp  Weapon.cpp
 OBJ = $(SRC:.cpp=.o)
-NAME = zombie
+NAME = weapon
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
-HDR = Zombie.hpp
+CFLAGS = -Wall -Wextra -Werror -std=c++98 
+HDR = HumanA.hpp Weapon.hpp HumanB.hpp
 
 all: $(NAME)
 

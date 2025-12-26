@@ -1,18 +1,17 @@
 #include "Zombie.hpp"
 
+Zombie::Zombie(){}
 
-void    Zombie::announce(void)
+Zombie::~Zombie()
 {
-    if(this->name == "Foo")
-        std::cout  << this->name << ": BraiiiiiiinnnzzzZ...\n";
-    else
-        std::cout << "<" << this->name << ">: BraiiiiiiinnnzzzZ...\n";
+    std::cout << "the objects are destroyed\n";
 }
 
-// Zombie::Zombie(std::string str):name(str)
-// {} ;
-
-// Zombie::~Zombie(void)
-// {
-//     std::cout << this->name << " is destroyed\n";
-// }
+void Zombie::announce(void)
+{
+    std::cout << name << " : BraiiiiiiinnnzzzZ...\n";
+}
+void Zombie::setname(std::string s)
+{
+    name = s;
+}
