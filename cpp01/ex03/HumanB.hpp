@@ -5,8 +5,8 @@
 class HumanB
 {
     private:
-        Weapon* _weapon;
         std::string name;
+        Weapon* _weapon;
     public:
         HumanB(std::string n);
         ~HumanB();

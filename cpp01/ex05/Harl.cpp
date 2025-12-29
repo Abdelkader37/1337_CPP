@@ -28,7 +28,7 @@ void Harl::complain(std::string level)
 {
     if(level.size() == 1 && isdigit(level[0]))
     {
-    int idx = level[0] - 48;
+         int idx = level[0] - 48;
         if(idx >= 0 && idx < 4)
         {
             void (Harl::*f[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
