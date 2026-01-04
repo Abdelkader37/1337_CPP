@@ -1,9 +1,9 @@
-SRC = Contact.cpp PhoneBook.cpp main.cpp
+SRC = main.cpp Fixed.cpp
 OBJ = $(SRC:.cpp=.o)
-NAME = phonebook
+NAME = Fixed
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-HDR = header.hpp Contact.hpp PhoneBook.hpp
+HDR = Fixed.hpp
 
 all: $(NAME)
 

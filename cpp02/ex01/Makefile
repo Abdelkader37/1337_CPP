@@ -1,9 +1,9 @@
-SRC = main.cpp 
+SRC = main.cpp Fixed.cpp
 OBJ = $(SRC:.cpp=.o)
-NAME = replace
+NAME = fixed
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 
-HDR = 
+CFLAGS = -Wall -Wextra -Werror -std=c++98
+HDR = Fixed.hpp
 
 all: $(NAME)
 

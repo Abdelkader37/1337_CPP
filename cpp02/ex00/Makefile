@@ -1,9 +1,9 @@
-SRC = main.cpp HumanB.cpp HumanA.cpp  Weapon.cpp
+SRC = main.cpp Fixed.cpp
 OBJ = $(SRC:.cpp=.o)
-NAME = weapon
+NAME = refrence
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 
-HDR = HumanA.hpp Weapon.hpp HumanB.hpp
+CFLAGS = -Wall -Wextra -Werror -std=c++98
+HDR = Fixed.hpp
 
 all: $(NAME)
 
